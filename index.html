@@ -1,10 +1,419 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Portfolio</title>
   </head>
   <body>
-    <h1>Hi it's my portfolio</h1>
+    <header class="jumbotron">
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <a class="navbar-brand mr-auto" href="./index.html"><strong>SLYD</strong></a>
+              <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto service">
+                  <li class="nav-item "><a href="#About"> About</a></li>
+                  <li class="nav-item"><a href="#mycarousel"> Certificate</a></li>
+                  <li class="nav-item"><a href="#resume"></span> Background</a></li>
+                  <li class="nav-item"><a href="#contact"> Contact</a></li>
+                </ul>
+               </div>
+              <span class="navbar-text">
+                <a class="d-none d-md-block"href="https://web.whatsapp.com/send?phone=918382821431" target="_blank"><i class="fa fa-whatsapp"></i>  8382821431</a>
+                <a class="d-md-none"href="https://api.whatsapp.com/send?phone=918382821431" target="_blank"> <i class="fa fa-whatsapp"></i> 8382821431</a>
+              </span>
+          </div>
+     </nav>
+     <div class="container" id="About">
+               <div class="row row-header">
+                   <div  class="col-12 col-sm-6 align-self-center">
+                     <div class="row">
+                       <h1 class="animated animated-text">
+                         <span class="mr-2">Hey folks, I'm</span></br>
+                               <div class="animated-info" id="detail">
+                                   <span class="animated-item">Saurabh Gupta</span>
+                                   <span class="animated-item">Web Developer</span>
+                                   <span class="animated-item">Data Scientist</span>
+                                   <span class="animated-item">Photophile</span>
+                               </div>
+                       </h1>
+                     </div>
+                     <div class="row mt-2">
+                     <div class="col-12 col-sm">
+                       <a role="button" class="col-12 col-sm-5 btn btn-block nav-link btn-warning" id="requestcall">Request a call</a>
+                     </div>
+                   </div>
+                 </div>
+                  <div class="col-12 col-sm mt-4 align-self-center">
+                      <img src="img/DSC_0165.jpg" class="img-fluid">
+                    </div>
+               </div>
+           </div>
+       </header>
+       <div id="requestcallform" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg" role="content">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Request a Call</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group row">
+                              <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                              <div class="col-5 col-md-3">
+                                  <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                              </div>
+                              <div class="col-7 col-md-7">
+                                  <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                              <div class="col-md-10">
+                                  <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-12 col-sm-2">Date and Time
+                             </div>
+                             <div class="col-12 col-sm">
+                                 <input type="date" class="form-control" name="date" placeholder="Date">
+                             </div>
+                             <div class="col-12 col-sm">
+                                  <input type="time" class="form-control" name="time" placeholder="Time">
+                             </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary btn-sm ml-auto" type="submit">Request</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+        </div>
+        <div class="container">
+          <div class="row row-content justify-content-center">
+                <div class="col col-md-10">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                                             <div class="carousel-item active">
+                                                 <div class="col-12">
+                                                   <img class="d-block img-fluid" src="img/Specialization_Web_Application.jpeg" alt="Specialization Web Application in php">
+                                              </div>
+                                            </div>
+                                           <div class="carousel-item">
+                                             <div class="col-12">
+                                               <img class="d-block img-fluid"
+                                                   src="img/Adv_responsive_design.jpeg" alt="Adv_responsive_design">
+                                               </div>
+                                            </div>
+                                          <div class="carousel-item">
+                                            <div class="col-12">
+                                              <img class="d-block img-fluid" src="img/Bootstrap_honors.jpeg" alt="Bootstrap_honors">
+                                            </div>
+                                          </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                                        <span id="carousel-button-icon" class="fa fa-pause"></span>
+                                    </button>
+                </div>
+          </div>
+        </div>
+      </div>
+      <section class="resume d-md-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <h2 class="mb-4">Skills</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>3/5</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Data Science</span><small></small></h3>
+                                  <p>Basic AI & ML algorithms, Data preprocessing, Data Visualization .</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>4/5</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Frameworks</span><small></small></h3>
+                                <p>Bootstrap, Node.js, ReactNative, Express.js, React.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>4/5</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Photography</h3>
+                                <p>Events & Sports Photography, Videography, Lightroom.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>4/5</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Programming<small></small></h3>
+                                <p>HTML5, CSS3, JavaScript, PHP, C, C++, Python, MySQL.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <h2 class="mb-4 mobile-mt-2">Education</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2012-14</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>G.V.P.S.</span><small>Bhadohi</small></h3>
+                                  <p>I had completed my high-school from G.V.P.S. with the 7.6 cgpa.</p>
+                             </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014-16</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>S.S.M.I.C</span><small>Suriyawan</small></h3>
+                                <p>I had completed my Intermediate in Science with 86.6% marks in 2016.</p>
+                              </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2017-21</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>IET</span><small>Lucknow</small></h3>
+                                <p>I am pursuing my Bachelor of Technology in Information Technology with an average of 8.77 cgpa. I am currently waiting for my graduation.</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-12">
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7204.502252226904!2d82.4186182!3d25.463288700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1616765161013!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-12">
+               <h3>Location Information</h3>
+            </div>
+             <div class="col-12 col-md-11 offset-md-1">
+                    <h5>Our Address</h5>
+                     <address style="font-size: 100%">
+                       ward-8, Main Road Suriyawan, Suriyawan, Bhadohi, UP, INDIA, 221404.<br>
+ 		              <i class="fa fa-phone"></i>: +91 8382821431<br>
+ 		              <i class="fa fa-fax"></i>: +91 8382821431<br>
+ 		              <i class="fa fa-envelope"></i>:
+                         <a href="mailto:1705213038@ietlucknow.ac.in">saurabhgup9936@gmail.com</a>
+ 		           </address>
+             </div>
+             <div class="col-12 col-md-11 offset-md-1 mt-2">
+                <div class="btn-group" role="group">
+                   <a role="button" class="btn btn-primary" href="tel:+918382821431"><i class="fa fa-phone"></i> Call</a>
+                   <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                   <a role="button" class="btn btn-success" href="mailto:saurabhgup9936@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+             </div>
+           </div>
+
+          <div class="col-12 col-md-6 ">
+            <div class="contact">
+              <h2 class="mb-4">Interested? Let's talk!</h2>
+
+              <form action="mailto:saurabhgup9936@gmail.com" method="GET">
+                  <div class="form-group row">
+                      <label for="firstname" class="col-md-3 col-form-label">First Name</label>
+                      <div class="col-md-9">
+                          <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="lastname" class="col-md-3 col-form-label">Last Name</label>
+                      <div class="col-md-9">
+                          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="emailid" class="col-md-3 col-form-label">Email</label>
+                      <div class="col-md-9">
+                          <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                        <label for="feedback" class="col-md-4 col-form-label">Your Message</label>
+                          <div class="col-md-12">
+                              <textarea class="form-control" id="feedback" name="feedback" rows="12" placeholder="Message"></textarea>
+                          </div>
+                 </div>
+                 <div class="form-group row">
+                    <div class="offset-md-5 col-md-7">
+                        <button class="btn btn-primary" type="submit">submit</button>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <style>
+        /* customizable snowflake styling */
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+        }
+
+        @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+        </style>
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+            ❅
+          </div>
+          <div class="snowflake">
+            ❆
+          </div>
+          <div class="snowflake">
+            ❅
+          </div>
+          <div class="snowflake">
+            ❆
+          </div>
+          <div class="snowflake">
+            ❅
+          </div>
+          <div class="snowflake">
+            ❆
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-sm-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="index.html#service">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		                ward-8, Main Road Suriyawan<br>
+		                Suriyawan, Bhadohi<br>
+		                UP,INDIA<br>
+                    <i class="fa fa-phone fa-lg"></i>: +91 8382821431<br>
+                    <i class="fa fa-fax fa-lg"></i>: +91 8382821431<br>
+                    <i class="fa fa-envelope fa-lg"></i>:
+                    <a href="mailto:saurabhgup9936@gmail.com">saurabhgup9936@gmail.com</a>
+     		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                  <div class="text-center">
+                      <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                      <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                      <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/saurabh-gupta-035445182"><i class="fa fa-linkedin"></i></a>
+                      <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                      <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                      <a class="btn btn-social-icon" href="mailto:saurabhgup9936@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                 </div>
+             </div>
+          </div>
+          <div class="row justify-content-center">
+                <div class="col-auto">
+                     <p>© Copyright 2020 SLYD</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
